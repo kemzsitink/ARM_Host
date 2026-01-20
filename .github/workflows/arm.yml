@@ -1,9 +1,6 @@
-name: Get_ARM_Now
+name: PLS GIT HUB I NEED THAT
 on: workflow_dispatch
 jobs:
   arm-job:
     runs-on: [ubuntu-latest, arm64]
-    steps:
-      - name: Setup tmate session
-        uses: mxschmitt/action-tmate@v3
-        timeout-minutes: 300
+
