@@ -1,10 +1,10 @@
 name: Get_ARM_Host
-on: workflow_dispatch # Kích hoạt bằng tay cho an toàn
+on: workflow_dispatch
 
 jobs:
   arm-job:
-    runs-on: ubuntu-24.04-arm64 # ĐÂY LÀ CHÌA KHÓA: Máy ARM thật của GitHub
+    runs-on: ubuntu-22.04-arm64 # Đổi sang 22.04 cho ổn định và nhanh có máy
     steps:
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
-        timeout-minutes: 360 # Bạn có 6 tiếng sử dụng miễn phí mỗi lần chạy
+        timeout-minutes: 350 # Treo gần 6 tiếng
