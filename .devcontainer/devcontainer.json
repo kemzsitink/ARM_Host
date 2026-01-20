@@ -1,0 +1,7 @@
+{
+    "name": "Ubuntu-ARM-Test",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04", // Image này CÓ hỗ trợ ARM64
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:1": {}
+    }
+}
